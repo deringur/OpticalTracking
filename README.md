@@ -2,6 +2,16 @@
 
 This project is an Optical Tracking system using the OptiTrack camera hardware meant to be integrated into SlicerMorph (a [*3D Slicer*](https://download.slicer.org/) extension) and replicate the functionality of old school mechanical digitizing pens with the optical tracking of a digitizing stylus. The project uses the [*OptiTrack V120 Duo*](https://optitrack.com/cameras/v120-duo/) camera system  as well as the [*Motive*](https://optitrack.com/software/motive/) data processing software. 
 
+# Second Milestone
+
+## Summary
+
+In this milestone, I managed to set up the OptiTrack V120 Duo tracking camera and get it working as well as get familiar with the Motive software's user interface. Once the software was up and running, I created *Rigid Body Objects* for both the stylus and reference object to be able to visualize the test objects from the perspective view to get started. I then exported the profile from Motive (.xml file) and also created my configuration file (.xml file) to get started with the PLUS Server Launcher and establish the intermediary connection between the two softwares and begin sending data to 3D Slicer. 
+
+## Challenges
+
+At this point, I had faced an issue with launching the server via the PLUS Server Launcher and establishing the connection to be able to send data to 3D Slicer.  
+
 # First Milestone
 
 ## Summary
@@ -19,3 +29,4 @@ The main challenge I faced at this time was navigating the complexity of the 3D 
 ## Next Steps
 
 In the following progression of this project, I will begin camera set up as well as download and start the Motive software to begin the first steps of this project. I will also install an intermediary between the tracking software (OptiTrack) and the vizualization software (Slicer); the [*PLUS Toolkit*](https://plustoolkit.github.io/) is the intermediary. 
+
