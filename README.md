@@ -14,7 +14,7 @@ The main challenge I faced at this time was navigating the complexity of the 3D 
 
 3D Slicer user interface example:
 
-![3D Slicer User Interface](IMG_6633.jpg){:height="33%" width="32%"}
+<img src="3DSlicerUI.png" width="1000" height="625" />
 
 ## Next Steps
 
