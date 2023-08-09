@@ -36,3 +36,9 @@ The main challenge I faced at this time was navigating the complexity of the 3D 
 
 In the following progression of this project, I will begin camera set up as well as download and start the Motive software to begin the first steps of this project. I will also install an intermediary between the tracking software (OptiTrack) and the vizualization software (Slicer); the [*PLUS Toolkit*](https://plustoolkit.github.io/) is the intermediary. 
 
+## Important Resources
+
+SlicerIGT: slicerigt.org (tutorials)
+3rd Party Tutorial: andysbrainbook.readthedocs.io (OptiTrack & Slicer)
+OptiTrack Probe Kit Guide: https://docs.optitrack.com/motive/measurement-probe-kit-guide
+Markups code: 3D Slicer > Edit > Application Settings > SlicerMorph > Customization file  
