@@ -42,3 +42,4 @@ SlicerIGT: slicerigt.org (tutorials)
 3rd Party Tutorial: andysbrainbook.readthedocs.io (OptiTrack & Slicer)
 OptiTrack Probe Kit Guide: https://docs.optitrack.com/motive/measurement-probe-kit-guide
 Markups code: 3D Slicer > Edit > Application Settings > SlicerMorph > Customization file  
+Slicer page: slicer.readthedocs.io > Modules > Markups 
