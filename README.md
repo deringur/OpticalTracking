@@ -16,7 +16,7 @@ At this point, I had faced a frustrating issue with launching the server via the
 
 In future efforts regarding the optical tracking project, I will first begin by sending **live data** over to 3D Slicer. This way, I can begin placing basic markers and lines over several trials to test the accuracy at which the instrument performs. With this measurement of accuracy, I can then determine whether or not this is a feasable method to approach research on 3D models. Additionally, I will include a more realistic model of the stylus itself for a better and more accurate visualization through Slicer. 
 
-<img src="SlicerAndMotive.gif" width="720" height="405" />
+<img src="SlicerAndMotive.gif" width="1000" height="625" />
 
 # First Milestone
 
