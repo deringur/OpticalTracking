@@ -55,3 +55,4 @@ In the following progression of this project, I will begin camera set up as well
 - Slicer page: slicer.readthedocs.io > Modules > Markups
 - Probe tip coordinates (Motive): Tools > Measurement
 - Add Model (Motive): Select Stylus rigid body > Properties pane > Model Replace (ON) > Attached Geometry
+- Visualizing model in Slicer: Slicer > Modules > IGT > OpenIGTLinkIF > Add scene > Check "Active" box > IGTL Connector > IN > Show model 
