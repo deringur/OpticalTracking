@@ -2,7 +2,17 @@
 
 This project is an Optical Tracking system using the OptiTrack camera hardware meant to be integrated into SlicerMorph (a [*3D Slicer*](https://download.slicer.org/) extension) and replicate the functionality of old school mechanical digitizing pens with the optical tracking of a digitizing stylus. The project uses the [*OptiTrack V120 Duo*](https://optitrack.com/cameras/v120-duo/) camera system  as well as the [*Motive*](https://optitrack.com/software/motive/) data processing software. 
 
-# Second Milestone
+# Third Milestone: Visualization in Slicer
+
+## Summary
+
+At this point, after having established the connection between Motive and Slicer, I began to create a more accurate representation of the probe in Slicer's view, which calls for a 3D model of the specific probe being used ([<ins>OptiTrack Probe Kit</ins>](https://optitrack.com/accessories/measurement-tools/)). I defined the rigid body that was previously created to be a *probe* by collecting samples through the pivot calibration feature on the software, returning the (x, y, z) coordinates of the **tip** of the stylus in 3D space. These coordinates are key pieces of information for this project. 
+
+## Challenges
+
+At this point, I was able to correctly label and visualize the stylus through Motive's perspective view. However, the main issue I faced was being able to reach the same level of clarity in visualization in Slicer. Currently, Slicer's representation of the probe is simply a blue line with a balled tip, making it easy to see what side it the tip, but very hard to visualize the orientation at which the probe is being help with respect to the view in Slicer. The main challenge was to find the 3D model of the specific probe and place it into Slicer for a clearer visualization. 
+
+# Second Milestone: Software and Server Connections
 
 ## Summary
 
@@ -18,7 +28,7 @@ In future efforts regarding the optical tracking project, I will first begin by 
 
 <img src="SlicerAndMotive.gif" width="720" height="405" />
 
-# First Milestone
+# First Milestone: 3D Slicer and Markups 
 
 ## Summary
 
