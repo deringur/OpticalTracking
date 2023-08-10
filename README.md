@@ -52,4 +52,6 @@ In the following progression of this project, I will begin camera set up as well
 - 3rd Party Tutorial: andysbrainbook.readthedocs.io (OptiTrack & Slicer)
 - OptiTrack Probe Kit Guide: https://docs.optitrack.com/motive/measurement-probe-kit-guide
 - Markups code: 3D Slicer > Edit > Application Settings > SlicerMorph > Customization file
-- Slicer page: slicer.readthedocs.io > Modules > Markups 
+- Slicer page: slicer.readthedocs.io > Modules > Markups
+- Probe tip coordinates (Motive): Tools > Measurement
+- Add Model (Motive): Select Stylus rigid body > Properties pane > Model Replace (ON) > Attached Geometry
