@@ -73,7 +73,7 @@ Launch the "Plus Server Launcher" application and navigate to the correct direct
 ### 4) Adding a New Needle Model 
 
 - Locate IGT > Create Models and click "Create Needle."
-- Go to the Data module and insert a new transform labeled "StylusTipToStylus."
+- Go to the Data module and insert a new transform labeled "StylusTipToStylus" in the "Transform Hierarchy" tab
 - Drag the new needle model into it and rename it "StylusTip." 
 
 ### 5) Pivot and Spin Calibration
