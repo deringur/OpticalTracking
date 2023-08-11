@@ -107,6 +107,7 @@ Launch the "Plus Server Launcher" application and navigate to the correct direct
 - OptiTrack Probe Kit Guide: https://docs.optitrack.com/motive/measurement-probe-kit-guide 
 - Markups code: 3D Slicer > Edit > Application Settings > SlicerMorph > Customization file
 - Slicer page: slicer.readthedocs.io > Modules > Markups
+- Slicer page: slicer.readthedocs.io > Developer Guide > Python > MRML / Slicer 
 - Probe tip coordinates (Motive): Tools > Measurement
 - Add Model (Motive): Select Stylus rigid body > Properties pane > Model Replace (ON) > Attached Geometry
 - Visualizing model in Slicer: Slicer > Modules > IGT > OpenIGTLinkIF > Add scene > Check "Active" box > IGTL Connector > IN > Show model 
