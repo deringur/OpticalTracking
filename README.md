@@ -2,6 +2,8 @@
 
 This project is an Optical Tracking system using the OptiTrack camera hardware meant to be integrated into SlicerMorph (a [*3D Slicer*](https://download.slicer.org/) extension) and replicate the functionality of old school mechanical digitizing pens with the optical tracking of a digitizing stylus. The project uses the [*OptiTrack V120 Duo*](https://optitrack.com/cameras/v120-duo/) camera system  as well as the [*Motive*](https://optitrack.com/software/motive/) data processing software. 
 
+[<ins>(*Jump to Startup Tutorial*)</ins>](#Tutorial)
+
 # Third Milestone: Visualizing in Slicer
 
 ## Summary
@@ -12,7 +14,7 @@ At this point, after having established the connection between Motive and Slicer
 
 At this point, I was able to correctly label and visualize the stylus through Motive's perspective view. However, the main issue I faced was being able to reach the same level of clarity in visualization in Slicer. Currently, Slicer's representation of the probe is simply a blue line with a balled tip, making it easy to see what side it the tip, but very hard to visualize the orientation at which the probe is being help with respect to the view in Slicer. The main challenge was to find the 3D model of the specific probe and place it into Slicer for a clearer visualization. 
 
-# Second Milestone: Software and Server Connections
+# Second Milestone: Software & Server Connections
 
 ## Summary
 
@@ -45,6 +47,46 @@ The main challenge I faced at this time was navigating the complexity of the 3D 
 ## Next Steps
 
 In the following progression of this project, I will begin camera set up as well as download and start the Motive software to begin the first steps of this project. I will also install an intermediary between the tracking software (OptiTrack) and the vizualization software (Slicer); the [*PLUS Toolkit*](https://plustoolkit.github.io/) is the intermediary. 
+
+<a id="Tutorial"></a>
+
+# Startup Tutorial 
+
+### 1) Launch Motive 
+
+*(Note: the OptiTrack camera must be receiving power before launching the software for Motive to open.)*
+
+Once Motive is launched, you should see the rigid body object labeled "Stylus," which is the probe that is being tracked in real time. To toggle the Stylus or Reference objects on and off, locate <ins>View > Assets Pane.</ins> You can also include the 3D model of the probe through Motive by selecting the marker at the tip of the Stylus and toggling "Model Replace" within the *Properties* pane, and then attach the .OBJ file of the model through the icon next to *"Attached Geometry"*.
+
+### 2) Establish PLUS Connection
+
+Launch the "Plus Server Launcher" application and navigate to the correct directory with the appropriate configuration (.xml) files and launch the server with the "Launch Server" button.
+
+### 3) Slicer Visualization
+
+- Open Slicer and locate the OpenIGTLinkIF module under IGT > OpenIGTLinkIF.
+- Add a connector with the "+" button.
+- Check the "Active" box under "Properties."
+- Move the Stylus around a little bit within the scope of the camera.
+- Navigate to the I/O Configuration > IGTLConnector > IN > Click the eye to visualize the transform.
+
+### 4) Adding a New Needle Model 
+
+- Locate IGT > Create Models and click "Create Needle."
+- Go to the Data module and insert a new transform labeled "StylusTipToStylus."
+- Drag the new needle model into it and rename it "StylusTip." 
+
+### 5) Pivot and Spin Calibration
+
+- Locate IGT > Pivot Calibration
+- Set INPUT as StylusToTracker  (???) 
+- Set OUTPUT as StylusTipToStylus
+- Select "Start Pivot Calibration" and start pivoting the probe around a set point until calibration is finished.
+- Select "Start Spin Calibration" and spin the probe left and right until calibration is finished.
+
+&nbsp;
+&nbsp;
+&nbsp;
 
 ## Important Resources
 
