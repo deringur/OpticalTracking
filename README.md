@@ -13,9 +13,10 @@ After having set up the basic components of the visualization in Slicer, it was 
 
 <img src="OptiTrack_TestSetup.JPG" width="720" height="405" />
 
- Finally, through contacting the OptiTrack team, I managed to get a hold of the 3D model of the probe as a .PLY file and converted it to an .OBJ file for compatibility with Motive. 
+Finally, through contacting the OptiTrack support team, I managed to get a hold of the 3D model of the probe as a .PLY file and converted it to an .OBJ file for compatibility with Motive:
  
- ![3D Probe Model](Micron Probe.obj)
+
+
 
 
  
