@@ -96,6 +96,14 @@ Launch the "Plus Server Launcher" application and navigate to the correct direct
 - Select "Start Pivot Calibration" and start pivoting the probe around a set point until calibration is finished.
 - Select "Start Spin Calibration" and spin the probe left and right until calibration is finished.
 
+### 6) Adding a Tip Point (Stylus) 
+
+- Add an empty point list Markup object (right click).
+- Place the empty point list object under the transform being used to record stylus coordinates through the Transforms module (right arrow).
+- Navigate to the Markups module and set the active Markups object as the empty point list (created above).
+- Click the placement button (red dot with blue arrow) and place the point at the tip of the stylus in Slicer. 
+- The new point should now move along with the stylus.
+  
 &nbsp;
 &nbsp;
 &nbsp;
@@ -112,3 +120,17 @@ Launch the "Plus Server Launcher" application and navigate to the correct direct
 - Probe tip coordinates (Motive): Tools > Measurement
 - Add Model (Motive): Select Stylus rigid body > Properties pane > Model Replace (ON) > Attached Geometry
 - Visualizing model in Slicer: Slicer > Modules > IGT > OpenIGTLinkIF > Add scene > Check "Active" box > IGTL Connector > IN > Show model 
+
+## Important Functions
+
+- **Get the position of a point:**
+  - F_1.GetNthControlPointPosition(0)
+ 
+- **Add a control point to the current active point list:**
+  - slicer.modules.markups.logic().AddControlPoint()
+
+- **Add a control point to an initial location:**
+  - slicer.modules.markups.logic().AddControlPoint(1.0, 2.0, 3.0)
+
+- **Get x,y,z position of a point (vector):**
+  - F_1.GetNthControlPointPositionWorld(0)
