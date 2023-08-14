@@ -15,10 +15,7 @@ After having set up the basic components of the visualization in Slicer, it was 
 
 Finally, through contacting the OptiTrack support team, I managed to get a hold of the 3D model of the probe as a .PLY file and converted it to an .OBJ file for compatibility with Motive:
  
-
-
-
-
+<img src="3DProbeModel.png" width="720" height="405" />
  
 ## Challenges
 
