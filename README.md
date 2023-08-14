@@ -91,7 +91,7 @@ Launch the "Plus Server Launcher" application and navigate to the correct direct
 ### 5) Pivot and Spin Calibration
 
 - Locate IGT > Pivot Calibration
-- Set INPUT as StylusToTracker  (???) 
+- Set INPUT as StylusToReference 
 - Set OUTPUT as StylusTipToStylus
 - Select "Start Pivot Calibration" and start pivoting the probe around a set point until calibration is finished.
 - Select "Start Spin Calibration" and spin the probe left and right until calibration is finished.
