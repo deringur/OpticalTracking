@@ -128,14 +128,27 @@ Launch the "Plus Server Launcher" application and navigate to the correct direct
 
 ## Important Functions
 
-- **Get the position of a point:**
-  - F_1.GetNthControlPointPosition(0)
- 
-- **Add a control point to the current active point list:**
+- **Get the x,y,z position of a point (vector):**
+  - F_1.GetNthControlPointPositionWorld(0)
+
+- **Place point at certain coordinates:**
+  - F_1.SetNthControlPointPosition(0, vector)
+- Add a control point to the current active point list:
   - slicer.modules.markups.logic().AddControlPoint()
 
-- **Add a control point to an initial location:**
+- Add a control point to an initial location:
   - slicer.modules.markups.logic().AddControlPoint(1.0, 2.0, 3.0)
 
-- **Get x,y,z position of a point (vector):**
-  - F_1.GetNthControlPointPositionWorld(0)
+
+
+## Simple Code
+
+```
+index = 0
+
+def function(): 
+    vector = F_1.GetNthControlPointPositionWorld(0)
+    F_2 = getNode("F_2")
+    F_2.SetNthControlPointPosition(index, vector) 
+    index += 1
+```
