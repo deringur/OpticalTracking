@@ -9,10 +9,12 @@ This project is an Optical Tracking system using the OptiTrack camera hardware m
 ## Summary
 
 After having set up the basic components of the visualization in Slicer, it was time to create a fundamentally stable and consistent setup for the cameras. Being **infrared cameras**, the OptiTrack system works by locating markers based on the general reflectiveness of the material that is presented (explaining the reflective points on the probe itself). I created a base with *black tiles* (low reflectiveness) and a *black surface* 
-(for more consistent marking) on which to mount the model and added a few reference points-made of 4 relfective bits of paper-to act as a reference object for the time being. I also mounted a non-reflective cushiony material in the middle to act as a point for *pivot* and *spin calibration* to result in a more realistic model on Slicer. Finally, through contacting the OptiTrack team, I managed to get a hold of the 3D model of the probe as a .PLY file and converted it to an .OBJ file for compatibility with Motive. 
+(for more consistent marking) on which to mount the model and added a few reference points-made of 4 relfective bits of paper-to act as a reference object for the time being. I also mounted a non-reflective cushiony material in the middle to act as a point for *pivot* and *spin calibration* to result in a more realistic model on Slicer. 
 
 <img src="OptiTrack_TestSetup.JPG" width="720" height="405" />
 
+ Finally, through contacting the OptiTrack team, I managed to get a hold of the 3D model of the probe as a .PLY file and converted it to an .OBJ file for compatibility with Motive.
+ 
 ## Challenges
 
 The main challenge I faced at this point was understanding how the connection between Slicer and Motive works with respect to the transforms that show up on Slicer. I discovered if the reference object was defined on Motive but not constantly presented in the shot, the correct transforms wouldn't show up in Slicer regardless of them being mentioned in the configuration files through the PLUS Server Launcher. 
