@@ -8,13 +8,19 @@ This project is an Optical Tracking system using the OptiTrack camera hardware m
 
 [<ins>(*Jump to Startup Tutorial*)</ins>](#Tutorial)
 
+# Sixth Milestone: Finalized OptiTrack Setup 
+
+## Summary
+
+Once I had finished experimenting with programatically adding Markups to the digital reconstruction of space with the probe, I finalized my camera setup by figuring out the **working distance** of the camera (turning out to be about 2 ft) and replacing the temporary reflective paper markers with official OptiTrack reflective markes coming in the probe kit. I quickly recreated the "Reference" rigid body with the new markers and began my final tests for **accuracy** and **consistency** with the markup points. 
+
 # Fifth Milestone: Programming with Slicer Libraries 
 
 ## Summary
 
 With the entire setup completed, the final step was to complete the programming aspect of the project. After going through **developer guide** in [<ins>3D Slicer's documentation</ins>](https://slicer.readthedocs.io/en/latest/), I navigated to the Markups documentation and read through several important functions for my implementation (Jump to: [Important Functions)](#Functions). With these, I wrote a simple code to place markup points programatically through the Python console in Slicer:
 
-### Simple Code:
+### Code:
 
 ```
 index = 0
@@ -26,7 +32,7 @@ def function():
     index += 1
 ```
 
-# Fourth Milestone: OptiTrack Camera Setup
+# Fourth Milestone: OptiTrack Camera Setup (Temporary)
 
 ## Summary
 
