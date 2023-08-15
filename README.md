@@ -1,8 +1,18 @@
 # OptiTrack Integration into 3D Slicer
 
-This project is an Optical Tracking system using the OptiTrack camera hardware meant to be integrated into SlicerMorph (a [*3D Slicer*](https://download.slicer.org/) extension) and replicate the functionality of old school mechanical digitizing pens with the optical tracking of a digitizing stylus. The project uses the [*OptiTrack V120 Duo*](https://optitrack.com/cameras/v120-duo/) camera system  as well as the [*Motive*](https://optitrack.com/software/motive/) data processing software. 
+## Description 
+
+This project is an Optical Tracking system using the OptiTrack camera hardware meant to be integrated into SlicerMorph (a [*3D Slicer*](https://download.slicer.org/) extension) and replicate the functionality of old school mechanical digitizing pens with the optical tracking of a digitizing stylus. The end goal is to test the serviceability of an optical tracking system in a real medical implementation through the experimentation on accuracy and consistency, as well as to be able to programatically add markup points onto the digital reconstruction of the model through a shortcut key. 
+
+**This project uses the [<ins>OptiTrack V120 Duo</ins>](https://optitrack.com/cameras/v120-duo/) camera system, the [<ins>Plus Toolkit</ins>](https://plustoolkit.github.io/) data pre-processing and calibration software, as well as the [<ins>Motive</ins>](https://optitrack.com/software/motive/) data processing software.**
 
 [<ins>(*Jump to Startup Tutorial*)</ins>](#Tutorial)
+
+# Fifth Milestone: Programming with Slicer Libraries 
+
+## Summary
+
+With the entire setup completed, the final step was to complete the programming aspect of the project. After going through the  
 
 # Fourth Milestone: OptiTrack Camera Setup
 
@@ -13,7 +23,9 @@ After having set up the basic components of the visualization in Slicer, it was 
 
 <img src="OptiTrack_TestSetup.JPG" width="720" height="405" />
 
-Finally, through contacting the OptiTrack support team, I managed to get a hold of the 3D model of the probe as a .PLY file and converted it to an .OBJ file for compatibility with Motive:
+In an ideal situation, the pieces of reflective paper would be replaced with a more professional marker material, such as the ones used on the OptiTrack probe. Since this is a very temporary setup, I decided to use a more accessible material for the time being. 
+
+Finally, through contacting the OptiTrack support team, I managed to get a hold of the 3D model of the probe as a .PLY file and converted it to an .OBJ file for compatibility and attached it with Motive:
  
 <img src="3DProbeModel.png" width="720" height="405" />
  
@@ -25,7 +37,7 @@ The main challenge I faced at this point was understanding how the connection be
 
 ## Summary
 
-At this point, after having established the connection between Motive and Slicer, I began to create a more accurate representation of the probe in Slicer's view, which calls for a 3D model of the specific probe being used ([<ins>OptiTrack Probe Kit</ins>](https://optitrack.com/accessories/measurement-tools/)). I identified the rigid body that was previously created to be a *probe* by collecting samples through the pivot calibration feature on the software, returning the (x, y, z) coordinates of the **tip** of the stylus in 3D space. These coordinates are key pieces of information for this project. 
+At this point, after having established the connection between Motive and Slicer, I began to create a more accurate representation of the probe in Slicer's view, which calls for a 3D model of the specific probe being used ([<ins>OptiTrack Probe Kit</ins>](https://optitrack.com/accessories/measurement-tools/)). I identified the rigid body that was previously created to be a *probe* by collecting samples through the pivot calibration feature on the software, returning the (x, y, z) coordinates of the **tip** of the stylus in 3D space. With the accuracy being a key component to this project, I did some experimentation and discovered that these coordinates were accurate down to about a tenth of a millimeter (0.1 mm). 
 
 ## Challenges
 
