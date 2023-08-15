@@ -12,7 +12,19 @@ This project is an Optical Tracking system using the OptiTrack camera hardware m
 
 ## Summary
 
-With the entire setup completed, the final step was to complete the programming aspect of the project. After going through **developer guide** in [<ins>3D Slicer's documentation</ins>](https://slicer.readthedocs.io/en/latest/), I navigated to the Markups documentation and read through several important functions for my implementation (Jump to: [Important Functions)](#Functions). With these, I wrote a simple code to place markup points programatically through the Python console in Slicer (Jump to: [Code)](#Code).
+With the entire setup completed, the final step was to complete the programming aspect of the project. After going through **developer guide** in [<ins>3D Slicer's documentation</ins>](https://slicer.readthedocs.io/en/latest/), I navigated to the Markups documentation and read through several important functions for my implementation (Jump to: [Important Functions)](#Functions). With these, I wrote a simple code to place markup points programatically through the Python console in Slicer:
+
+### Simple Code:
+
+```
+index = 0
+
+def function(): 
+    vector = F_1.GetNthControlPointPositionWorld(0)
+    F_2 = getNode("F_2")
+    F_2.SetNthControlPointPosition(index, vector) 
+    index += 1
+```
 
 # Fourth Milestone: OptiTrack Camera Setup
 
@@ -31,7 +43,7 @@ Finally, through contacting the OptiTrack support team, I managed to get a hold 
  
 <img src="3DProbeModel.png" width="720" height="405" />
 
- &nbsp;
+&nbsp;
  
 ## Challenges
 
@@ -157,14 +169,3 @@ Launch the "Plus Server Launcher" application and navigate to the correct direct
 
 <a id="Code"></a>
 
-## Simple Code
-
-```
-index = 0
-
-def function(): 
-    vector = F_1.GetNthControlPointPositionWorld(0)
-    F_2 = getNode("F_2")
-    F_2.SetNthControlPointPosition(index, vector) 
-    index += 1
-```
