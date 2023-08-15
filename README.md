@@ -12,7 +12,8 @@ This project is an Optical Tracking system using the OptiTrack camera hardware m
 
 ## Summary
 
-With the entire setup completed, the final step was to complete the programming aspect of the project. After going through developer guide in [3D Slicer's documentation](https://slicer.readthedocs.io/en/latest/), I navigated to the Markups documentation and read through several important functions for my implementation [<ins>(important functions)</ins>](#Functions)
+With the entire setup completed, the final step was to complete the programming aspect of the project. After going through developer guide in [3D Slicer's documentation](https://slicer.readthedocs.io/en/latest/), I navigated to the Markups documentation and read through several important functions for my implementation [<ins>(jump to Important Functions)</ins>](#Functions). With these, I wrote a simple code to place markup points programatically through the Python console in Slicer [<ins>(jump to Code)</ins>](#Code).
+
 # Fourth Milestone: OptiTrack Camera Setup
 
 ## Summary
@@ -154,7 +155,7 @@ Launch the "Plus Server Launcher" application and navigate to the correct direct
 - Add a control point to an initial location:
   - slicer.modules.markups.logic().AddControlPoint(1.0, 2.0, 3.0)
 
-
+<a id="Code"></a>
 
 ## Simple Code
 
