@@ -14,6 +14,14 @@ This project is an Optical Tracking system using the OptiTrack camera hardware m
 
 Once I had finished experimenting with programatically adding Markups to the digital reconstruction of space with the probe, I finalized my camera setup by figuring out the **working distance** of the camera (turning out to be about 2 ft) and replacing the temporary reflective paper markers with official OptiTrack reflective markes coming in the probe kit. I quickly recreated the "Reference" rigid body with the new markers and began my final tests for **accuracy** and **consistency** with the markup points. 
 
+After performing several trials of fetching the coordinates of the tip through the Slicer Python console, I discovered the consistecy in accuracy and calculated the following average deviations:
+
+- +- 0.560 mm on the **x-axis**
+- +- 0.817 mm on the **z-axis**
+- +- 2.546 mm on the **y-axis**
+
+With the calculated average deviation values, it is clear that this system is much **more accurate along the x-axis and z-axis** as opposed the y-axis due to the angle of the camera setup. Since the OptiTrack V120 Duo is a bar camera, it **fails to capture the depth** of the 3-dimensional space to a high accuracy. Since my camera is positioned *above the model*, measurements along the y-axis are naturally less accurate.  
+
 # Fifth Milestone: Programming with Slicer Libraries 
 
 ## Summary
