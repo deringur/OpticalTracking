@@ -138,7 +138,7 @@ Launch the "Plus Server Launcher" application and navigate to the correct direct
 - Add Model (Motive): Select Stylus rigid body > Properties pane > Model Replace (ON) > Attached Geometry
 - Visualizing model in Slicer: Slicer > Modules > IGT > OpenIGTLinkIF > Add scene > Check "Active" box > IGTL Connector > IN > Show model 
 
-## Important Functions
+## Important Functions (Slicer)
 
 - **Get the x,y,z position of a point (vector):**
   - F_1.GetNthControlPointPositionWorld(0)
