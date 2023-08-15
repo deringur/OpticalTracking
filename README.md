@@ -132,6 +132,7 @@ Launch the "Plus Server Launcher" application and navigate to the correct direct
 ### 6) *Adding a Tip Point (Stylus) 
 
 - Add an empty point list Markup object (right click).
+- In the Active Transform drop down menu, select "StylusToTracker."
 - Place the empty point list object under the transform being used to record stylus coordinates through the Transforms module (right arrow).
 - Navigate to the Markups module and set the active Markups object as the empty point list (created above).
 - Click the placement button (red dot with blue arrow) and place the point at the tip of the stylus in Slicer. 
@@ -141,16 +142,20 @@ Launch the "Plus Server Launcher" application and navigate to the correct direct
 
 ## Important Resources
 
-- SlicerIGT: slicerigt.org (tutorials)
-- 3rd Party Tutorial: andysbrainbook.readthedocs.io (OptiTrack & Slicer)
-- OptiTrack Probe Kit Guide: https://docs.optitrack.com/motive/measurement-probe-kit-guide 
+### Slicer Resources     [**(<ins>   </ins>)**]()
+
+- **3D Slicer Documentation: Script Repository for Markups:** [**(<ins>Markups Repository</ins>)**](https://slicer.readthedocs.io/en/latest/developer_guide/script_repository.html#markups)
+- Tutorials to get familiar with Slicer UI and SlicerIGT extension: [**(<ins>SlicerIGT User Tutorials</ins>)**](https://www.slicerigt.org/wp/user-tutorial/)
+- 3D Slicer Documentation: Dev. guide with code for Slicer libraries: [**(<ins>Slicer Documentation</ins>)**](https://slicer.readthedocs.io/en/latest/developer_guide/index.html)
 - Markups code: 3D Slicer > Edit > Application Settings > SlicerMorph > Customization file
-- Slicer page: slicer.readthedocs.io > Modules > Markups
-- Slicer page: slicer.readthedocs.io > Developer Guide > Python > MRML / Slicer
-- Slicer page: slicer.readthedocs.io > Developer Guide > Script Repository > Markups
-- Probe tip coordinates (Motive): Tools > Measurement
-- Add Model (Motive): Select Stylus rigid body > Properties pane > Model Replace (ON) > Attached Geometry
-- Visualizing model in Slicer: Slicer > Modules > IGT > OpenIGTLinkIF > Add scene > Check "Active" box > IGTL Connector > IN > Show model 
+
+### Setup Resources
+
+- **AndysBrainBook tutorial: set up OptiTrack in Slicer:** [**(<ins>OptiTrack & Slicer</ins>)**](andysbrainbook.readthedocs.io)
+- **Official OptiTrack Probe Kit Guide:** [**(<ins>Probe Kit Guide</ins>)**](https://docs.optitrack.com/motive/measurement-probe-kit-guide) 
+- Probe tip coordinates (<ins>Motive</ins>): Tools > Measurement
+- Add Model (<ins>Motive</ins>): Select Stylus rigid body > Properties pane > Model Replace (ON) > Attached Geometry
+- Visualizing model in Slicer: Slicer > Modules > IGT > OpenIGTLinkIF > Add scene (+) > Check "Active" box > IGTLConnector > IN > Show model with the "eye" icon
 
 <a id="Functions"></a>
 
