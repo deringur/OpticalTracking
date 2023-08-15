@@ -97,7 +97,7 @@ Launch the "Plus Server Launcher" application and navigate to the correct direct
 - Add a connector with the "+" button.
 - Check the "Active" box under "Properties."
 - Move the Stylus around a little bit within the scope of the camera.
-- Navigate to the I/O Configuration > IGTLConnector > IN > Click the eye to visualize the transform.
+- Navigate to the I/O Configuration > IGTLConnector > IN > Click the eye to visualize the StylusToTracker transform.
 
 ### 4) Adding a New Needle Model 
 
