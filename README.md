@@ -16,9 +16,9 @@ Once I had finished experimenting with programatically adding Markups to the dig
 
 After performing several trials of fetching the coordinates of the tip through the Slicer Python console, I discovered the consistecy in accuracy and calculated the following average deviations:
 
-- +- 0.560 mm on the **x-axis**
-- +- 0.817 mm on the **z-axis**
-- +- 2.546 mm on the **y-axis**
+- **+- 0.560 mm** on the **x-axis**
+- **+- 0.817 mm** on the **z-axis**
+- **+- 2.546 mm** on the **y-axis**
 
 With the calculated average deviation values, it is clear that this system is much **more accurate along the x-axis and z-axis** as opposed the y-axis due to the angle of the camera setup. Since the OptiTrack V120 Duo is a bar camera, it **fails to capture the depth** of the 3-dimensional space to a high accuracy. Since my camera is positioned *above the model*, measurements along the y-axis are naturally less accurate.  
 
