@@ -81,17 +81,17 @@ In the following progression of this project, I will begin camera set up as well
 
 # Startup Tutorial 
 
-### 1) Launch Motive 
+### 1) *Launch Motive 
 
 *(Note: the OptiTrack camera must be receiving power before launching the software for Motive to open.)*
 
 Once Motive is launched, you should see the rigid body object labeled "Stylus," which is the probe that is being tracked in real time. To toggle the Stylus or Reference objects on and off, locate <ins>View > Assets Pane.</ins> You can also include the 3D model of the probe through Motive by selecting the marker at the tip of the Stylus and toggling "Model Replace" within the *Properties* pane, and then attach the .OBJ file of the model through the icon next to *"Attached Geometry"*.
 
-### 2) Establish PLUS Connection
+### 2) *Establish PLUS Connection
 
 Launch the "Plus Server Launcher" application and navigate to the correct directory with the appropriate configuration (.xml) files and launch the server with the "Launch Server" button.
 
-### 3) Slicer Visualization
+### 3) *Slicer Visualization
 
 - Open Slicer and locate the OpenIGTLinkIF module under IGT > OpenIGTLinkIF.
 - Add a connector with the "+" button.
@@ -113,7 +113,7 @@ Launch the "Plus Server Launcher" application and navigate to the correct direct
 - Select "Start Pivot Calibration" and start pivoting the probe around a set point until calibration is finished.
 - Select "Start Spin Calibration" and spin the probe left and right until calibration is finished.
 
-### 6) Adding a Tip Point (Stylus) 
+### 6) *Adding a Tip Point (Stylus) 
 
 - Add an empty point list Markup object (right click).
 - Place the empty point list object under the transform being used to record stylus coordinates through the Transforms module (right arrow).
