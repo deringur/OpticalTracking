@@ -12,8 +12,7 @@ This project is an Optical Tracking system using the OptiTrack camera hardware m
 
 ## Summary
 
-With the entire setup completed, the final step was to complete the programming aspect of the project. After going through the  
-
+With the entire setup completed, the final step was to complete the programming aspect of the project. After going through developer guide in [3D Slicer's documentation](https://slicer.readthedocs.io/en/latest/), I navigated to the Markups documentation and read through several important functions for my implementation [<ins>(important functions)</ins>](#Functions)
 # Fourth Milestone: OptiTrack Camera Setup
 
 ## Summary
@@ -23,11 +22,15 @@ After having set up the basic components of the visualization in Slicer, it was 
 
 <img src="OptiTrack_TestSetup.JPG" width="720" height="405" />
 
+&nbsp;
+
 In an ideal situation, the pieces of reflective paper would be replaced with a more professional marker material, such as the ones used on the OptiTrack probe. Since this is a very temporary setup, I decided to use a more accessible material for the time being. 
 
 Finally, through contacting the OptiTrack support team, I managed to get a hold of the 3D model of the probe as a .PLY file and converted it to an .OBJ file for compatibility and attached it with Motive:
  
 <img src="3DProbeModel.png" width="720" height="405" />
+
+ &nbsp;
  
 ## Challenges
 
@@ -122,8 +125,6 @@ Launch the "Plus Server Launcher" application and navigate to the correct direct
 - The new point should now move along with the stylus.
   
 &nbsp;
-&nbsp;
-&nbsp;
 
 ## Important Resources
 
@@ -137,6 +138,8 @@ Launch the "Plus Server Launcher" application and navigate to the correct direct
 - Probe tip coordinates (Motive): Tools > Measurement
 - Add Model (Motive): Select Stylus rigid body > Properties pane > Model Replace (ON) > Attached Geometry
 - Visualizing model in Slicer: Slicer > Modules > IGT > OpenIGTLinkIF > Add scene > Check "Active" box > IGTL Connector > IN > Show model 
+
+<a id="Functions"></a>
 
 ## Important Functions (Slicer)
 
