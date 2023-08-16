@@ -30,14 +30,31 @@ With the calculated average deviation values, it is clear that this system is mu
 
 ## Summary
 
-With the entire setup completed, the final step was to complete the programming aspect of the project. After going through **developer guide** in [<ins>3D Slicer's documentation</ins>](https://slicer.readthedocs.io/en/latest/), I navigated to the Markups documentation and read through several important functions for my implementation (Jump to: [Important Functions)](#Functions). With these, I wrote a simple code to place markup points programatically through the Python console in Slicer:
+With the entire temporary setup completed, the next step was to complete the programming aspect of the project. After going through **developer guide** in [<ins>3D Slicer's documentation</ins>](https://slicer.readthedocs.io/en/latest/), I navigated to the Markups documentation and read through several important functions for my implementation (Jump to: [Important Functions)](#Functions). With these, I wrote a simple code to place markup points programatically through the Python console in Slicer:
 
 ### Code:
 
 ```
-F=getNode('F')
-# print(F.GetNthControlPointPositionWorld(0))
-G=slicer.mrmlScene.AddNewNodeByClass('vtkMRMLMarkupsFiducialNode', 'G')
+F = getNode('F')
+print(F.GetNthControlPointPositionWorld(0)) # Shows the x,y,z position of point 'F' (the tip of the stylus).
+G = slicer.mrmlScene.AddNewNodeByClass('vtkMRMLMarkupsFiducialNode', 'G')
+G.AddControlPoint(F.GetNthControlPointPositionWorld(0))
+```
+
+&nbsp;
+
+This code works by first getting the new node, labeled 'F':
+```
+F = geNode('F')
+```
+
+Then, we create a new empty point list labeled 'G' (this can also be done through GUI):
+```
+G = slicer.mrmlScene.AddNewNodeByClass('vtkMRMLMarkupsFiducialNode', 'G')
+```
+
+Finally, add a new control point in the new empty point list (G) at the coordinates of the point which is at the tip of the stylus:
+```
 G.AddControlPoint(F.GetNthControlPointPositionWorld(0))
 ```
 
