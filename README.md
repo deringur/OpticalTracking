@@ -14,7 +14,7 @@ This project is an Optical Tracking system using the OptiTrack camera hardware m
 
 ## Summary
 
-Once I had finished experimenting with programatically adding Markups to the digital reconstruction of space with the probe, I finalized my camera setup by figuring out the **working distance** of the camera (turning out to be about 2 ft) and replacing the temporary reflective paper markers with official OptiTrack reflective markes coming in the probe kit. I quickly recreated the "Reference" rigid body with the new markers and began my final tests for **accuracy** and **consistency** with the markup points:
+Once I had finished experimenting with programatically adding Markups to the digital reconstruction of space with the probe, I finalized my camera setup by figuring out the **working distance** of the camera (turning out to be a minimum of ≈ 2 ft) and replacing the temporary reflective paper markers with official OptiTrack reflective markes coming in the probe kit. I quickly recreated the "Reference" rigid body with the new markers and began my final tests for **accuracy** and **consistency** with the markup points:
 
 ![Accuracy Trials](AccuracyTrials.png)
 
@@ -24,7 +24,7 @@ These trials were performed by keeping the stylus tip stationary and positioning
 - **≈ 2.546 mm** on the **y-axis**
 - **≈ 0.817 mm** on the **z-axis**
 
-With the calculated average deviation values, it is clear that this system is much **more accurate along the x-axis and z-axis** as opposed the y-axis due to the angle of the camera setup. Since the OptiTrack V120 Duo is a bar camera, it **fails to capture the depth** of the 3-dimensional space to a high enough accuracy. Since my camera is positioned *above the model*, measurements along the y-axis are naturally less accurate. A possible solution to this is to use a camera setup which captures all three dimensions with its positioning, such as an OptiTrack setup with 3-4 [<ins>individual tracking cameras</ins>](https://optitrack.com/cameras/primex-41/) positioned *around* the working space.
+With the calculated average deviation values, it is clear that this system is much **more accurate along the x-axis and z-axis** as opposed the y-axis due to the angle of the camera setup. Since the OptiTrack V120 Duo is a bar camera, it **fails to capture the depth** of the 3-dimensional space to a high enough accuracy. Since my camera is positioned *above the model*, measurements along the y-axis are naturally less accurate. A possible solution to this is to use a camera setup which captures all three dimensions with its positioning, such as an OptiTrack setup with 3-4 [<ins>individual tracking cameras</ins>](https://optitrack.com/cameras/primex-41/) positioned *around* the working space. Another possible explanation for the higher values in average deviation along the **y-axis** may be due to the fact that the markers representing my reference object are all **coplanar** on the xz-plane, lowering y-axis accuracy.
 
 # Fifth Milestone: Programming with Slicer Libraries 
 
