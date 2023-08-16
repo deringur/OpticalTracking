@@ -6,7 +6,7 @@ This project is an Optical Tracking system using the OptiTrack camera hardware m
 
 **This project uses the [<ins>OptiTrack V120 Duo</ins>](https://optitrack.com/cameras/v120-duo/) camera system, the [<ins>Plus Toolkit</ins>](https://plustoolkit.github.io/) data pre-processing and calibration software, as well as the [<ins>Motive</ins>](https://optitrack.com/software/motive/) data processing software.**
 
-### Tutorials:
+## Tutorials:
 
 [<ins>(***Jump to Main Setup Tutorial***)</ins>](#MainTutorial) ***OR*** [<ins>(***Jump to Startup Tutorial***)</ins>](#Tutorial)
 
