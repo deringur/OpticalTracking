@@ -12,15 +12,17 @@ This project is an Optical Tracking system using the OptiTrack camera hardware m
 
 ## Summary
 
-Once I had finished experimenting with programatically adding Markups to the digital reconstruction of space with the probe, I finalized my camera setup by figuring out the **working distance** of the camera (turning out to be about 2 ft) and replacing the temporary reflective paper markers with official OptiTrack reflective markes coming in the probe kit. I quickly recreated the "Reference" rigid body with the new markers and began my final tests for **accuracy** and **consistency** with the markup points. 
+Once I had finished experimenting with programatically adding Markups to the digital reconstruction of space with the probe, I finalized my camera setup by figuring out the **working distance** of the camera (turning out to be about 2 ft) and replacing the temporary reflective paper markers with official OptiTrack reflective markes coming in the probe kit. I quickly recreated the "Reference" rigid body with the new markers and began my final tests for **accuracy** and **consistency** with the markup points:
 
-After performing several trials of fetching the coordinates of the tip through the Slicer Python console, I discovered the consistecy in accuracy and calculated the following average deviations:
+![Accuracy Trials](AccuracyTrials.png)
 
-- **+- 0.560 mm** on the **x-axis**
-- **+- 0.817 mm** on the **z-axis**
-- **+- 2.546 mm** on the **y-axis**
+These trials were performed by keeping the stylus tip stationary and positioning the body of the probe at different angles to the camera. After several trials of fetching the coordinates of the tip through the Slicer Python console, I discovered the consistecy in accuracy and calculated the following average deviations:
 
-With the calculated average deviation values, it is clear that this system is much **more accurate along the x-axis and z-axis** as opposed the y-axis due to the angle of the camera setup. Since the OptiTrack V120 Duo is a bar camera, it **fails to capture the depth** of the 3-dimensional space to a high accuracy. Since my camera is positioned *above the model*, measurements along the y-axis are naturally less accurate.  
+- **≈ 0.560 mm** on the **x-axis**
+- **≈ 0.817 mm** on the **z-axis**
+- **≈ 2.546 mm** on the **y-axis**
+
+With the calculated average deviation values, it is clear that this system is much **more accurate along the x-axis and z-axis** as opposed the y-axis due to the angle of the camera setup. Since the OptiTrack V120 Duo is a bar camera, it **fails to capture the depth** of the 3-dimensional space to a high enough accuracy. Since my camera is positioned *above the model*, measurements along the y-axis are naturally less accurate. A possible solution to this is to use a camera setup which captures all three dimensions with its positioning, such as an OptiTrack setup with 3-4 [<ins>individual tracking cameras</ins>](https://optitrack.com/cameras/primex-41/) positioned *around* the working space.
 
 # Fifth Milestone: Programming with Slicer Libraries 
 
@@ -31,13 +33,10 @@ With the entire setup completed, the final step was to complete the programming 
 ### Code:
 
 ```
-index = 0
-
-def function(): 
-    vector = F_1.GetNthControlPointPositionWorld(0)
-    F_2 = getNode("F_2")
-    F_2.SetNthControlPointPosition(index, vector) 
-    index += 1
+F=getNode('F')
+# print(F.GetNthControlPointPositionWorld(0))
+G=slicer.mrmlScene.AddNewNodeByClass('vtkMRMLMarkupsFiducialNode', 'G')
+G.AddControlPoint(F.GetNthControlPointPositionWorld(0))
 ```
 
 # Fourth Milestone: OptiTrack Camera Setup (Temporary)
@@ -157,7 +156,7 @@ Launch the "Plus Server Launcher" application and navigate to the correct direct
 
 ## Important Resources
 
-### Slicer Resources     [**(<ins>   </ins>)**]()
+### Slicer Resources
 
 - **3D Slicer Documentation: Script Repository for Markups:** [**(<ins>Markups Repository</ins>)**](https://slicer.readthedocs.io/en/latest/developer_guide/script_repository.html#markups)
 - Tutorials to get familiar with Slicer UI and SlicerIGT extension: [**(<ins>SlicerIGT User Tutorials</ins>)**](https://www.slicerigt.org/wp/user-tutorial/)
@@ -174,7 +173,7 @@ Launch the "Plus Server Launcher" application and navigate to the correct direct
 
 <a id="Functions"></a>
 
-## Important Functions (Slicer)
+## Important Functions (SlicerMorph)
 
 - **Get the x,y,z position of a point (vector):**
   - F_1.GetNthControlPointPositionWorld(0)
