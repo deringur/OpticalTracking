@@ -57,7 +57,7 @@ Finally, through contacting the OptiTrack support team, I managed to get a hold 
  
 <img src="3DProbeModel.png" width="720" height="405" />
 
-[(Link to probe model download)](MicronProbe.obj)
+[<ins>(Download Micron Probe model here)</ins>](MicronProbe.obj)
 &nbsp;
  
 ## Challenges
