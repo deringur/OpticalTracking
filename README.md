@@ -6,7 +6,7 @@ This project is an Optical Tracking system using the OptiTrack camera hardware m
 
 **This project uses the [<ins>OptiTrack V120 Duo</ins>](https://optitrack.com/cameras/v120-duo/) camera system, the [<ins>Plus Toolkit</ins>](https://plustoolkit.github.io/) data pre-processing and calibration software, as well as the [<ins>Motive</ins>](https://optitrack.com/software/motive/) data processing software.**
 
-[<ins>(*Jump to Startup Tutorial*)</ins>](#Tutorial)
+[<ins>(*Jump to Main Setup Tutorial*)</ins>](#MainTutorial) ***OR*** [<ins>(*Jump to Startup Tutorial*)</ins>](#Tutorial)
 
 # Sixth Milestone: Finalized Setup and Accuracy Tests
 
@@ -146,15 +146,9 @@ Launch the "Plus Server Launcher" application and navigate to the correct direct
 - Add a connector with the "+" button.
 - Check the "Active" box under "Properties."
 - Move the Stylus around a little bit within the scope of the camera.
-- Navigate to the I/O Configuration > IGTLConnector > IN > Click the eye to visualize the StylusToTracker transform.
+- Navigate to the I/O Configuration > IGTLConnector > IN > Click the eye to visualize the StylusToTracker transform. 
 
-### 4) Adding a New Needle Model 
-
-- Locate IGT > Create Models and click "Create Needle."
-- Go to the Data module and insert a new transform labeled "StylusTipToStylus" in the "Transform Hierarchy" tab
-- Drag the new needle model into it and rename it "StylusTip." 
-
-### 5) Pivot and Spin Calibration
+### 4) Pivot and Spin Calibration
 
 - Locate IGT > Pivot Calibration
 - Set INPUT as StylusToReference 
@@ -162,7 +156,7 @@ Launch the "Plus Server Launcher" application and navigate to the correct direct
 - Select "Start Pivot Calibration" and start pivoting the probe around a set point until calibration is finished.
 - Select "Start Spin Calibration" and spin the probe left and right until calibration is finished.
 
-### 6) *Adding a Tip Point (Stylus) 
+### 5) *Adding a Tip Point (Stylus) 
 
 - Add an empty point list Markup object (right click).
 - In the Active Transform drop down menu, select "StylusToTracker."
@@ -182,9 +176,11 @@ Launch the "Plus Server Launcher" application and navigate to the correct direct
 - 3D Slicer Documentation: Dev. guide with code for Slicer libraries: [**(<ins>Slicer Documentation</ins>)**](https://slicer.readthedocs.io/en/latest/developer_guide/index.html)
 - Markups code: 3D Slicer > Edit > Application Settings > SlicerMorph > Customization file
 
+<a id="MainTutorial"></a>
+
 ### Setup Resources (+ Main Tutorial)
 
-- **AndysBrainBook MAIN tutorial: set up OptiTrack in Slicer:** [**(<ins>OptiTrack & Slicer</ins>)**](andysbrainbook.readthedocs.io)
+- **AndysBrainBook *MAIN TUTORIAL*: set up OptiTrack in Slicer:** [**(<ins>OptiTrack & Slicer</ins>)**](andysbrainbook.readthedocs.io)
 - **Official OptiTrack Probe Kit Guide:** [**(<ins>Probe Kit Guide</ins>)**](https://docs.optitrack.com/motive/measurement-probe-kit-guide) 
 - Probe tip coordinates (<ins>Motive</ins>): Tools > Measurement
 - Add Model (<ins>Motive</ins>): Select Stylus rigid body > Properties pane > Model Replace (ON) > Attached Geometry
