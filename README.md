@@ -51,12 +51,13 @@ After having set up the basic components of the visualization in Slicer, it was 
 
 &nbsp;
 
-In an ideal situation, the pieces of reflective paper would be replaced with a more professional marker material, such as the ones used on the OptiTrack probe. Since this is a very temporary setup, I decided to use a more accessible material for the time being. 
+Later on, the pieces of reflective paper will be replaced with a more professional marker material, such as the ones used on the OptiTrack probe. Since this is a very temporary setup, I decided to use a more accessible and expendable material for the time being. 
 
 Finally, through contacting the OptiTrack support team, I managed to get a hold of the 3D model of the probe as a .PLY file and converted it to an .OBJ file for compatibility and attached it with Motive:
  
 <img src="3DProbeModel.png" width="720" height="405" />
 
+[(Link to probe model download)](MicronProbe.obj)
 &nbsp;
  
 ## Challenges
