@@ -8,7 +8,9 @@ This project is an Optical Tracking system using the OptiTrack camera hardware m
 
 [<ins>(*Jump to Startup Tutorial*)</ins>](#Tutorial)
 
-# Sixth Milestone: Finalized OptiTrack Setup 
+# Sixth Milestone: Finalized Setup and Accuracy Tests
+
+![Final Setup](FinalSetup.JPG)
 
 ## Summary
 
@@ -180,10 +182,17 @@ Launch the "Plus Server Launcher" application and navigate to the correct direct
 
 - **Place point at certain coordinates:**
   - F_1.SetNthControlPointPosition(0, vector)
+
+- **Create a new empty point list programatically and pass it a name (G):**
+  - G = slicer.mrmlScene.AddNewNodeByClass('vtkMRMLMarkupsFiducialNode', 'G')
+
+- **Create and add a new control point to a specific point list (G) at specific coordinates:**
+  - G.AddControlPoint(x,y,z)
+
 - Add a control point to the current active point list:
   - slicer.modules.markups.logic().AddControlPoint()
 
-- Add a control point to an initial location:
+- Add a control point to a specific location:
   - slicer.modules.markups.logic().AddControlPoint(1.0, 2.0, 3.0)
 
 <a id="Code"></a>
