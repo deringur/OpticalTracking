@@ -165,9 +165,9 @@ Launch the "Plus Server Launcher" application and navigate to the correct direct
 - 3D Slicer Documentation: Dev. guide with code for Slicer libraries: [**(<ins>Slicer Documentation</ins>)**](https://slicer.readthedocs.io/en/latest/developer_guide/index.html)
 - Markups code: 3D Slicer > Edit > Application Settings > SlicerMorph > Customization file
 
-### Setup Resources
+### Setup Resources (+ Main Tutorial)
 
-- **AndysBrainBook tutorial: set up OptiTrack in Slicer:** [**(<ins>OptiTrack & Slicer</ins>)**](andysbrainbook.readthedocs.io)
+- **AndysBrainBook MAIN tutorial: set up OptiTrack in Slicer:** [**(<ins>OptiTrack & Slicer</ins>)**](andysbrainbook.readthedocs.io)
 - **Official OptiTrack Probe Kit Guide:** [**(<ins>Probe Kit Guide</ins>)**](https://docs.optitrack.com/motive/measurement-probe-kit-guide) 
 - Probe tip coordinates (<ins>Motive</ins>): Tools > Measurement
 - Add Model (<ins>Motive</ins>): Select Stylus rigid body > Properties pane > Model Replace (ON) > Attached Geometry
